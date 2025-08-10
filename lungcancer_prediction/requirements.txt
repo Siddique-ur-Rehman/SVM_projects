@@ -1,0 +1,8 @@
+# List of libraries used in the notebook
+# You can get this list by running !pip freeze
+
+# Example (replace with actual libraries from !pip freeze output):
+# pandas
+# scikit-learn
+# matplotlib
+# seaborn

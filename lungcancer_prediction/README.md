@@ -88,8 +88,7 @@ The dataset used is `lung cancer.csv`, which contains patient information and sy
 **Description**: A supervised learning model that finds the optimal hyperplane for classification.
 
 **Parameters**:
-```python
-SVC(kernel='linear', random_state=42)
+
 Performance:
 
 Metric	Score
@@ -135,7 +134,8 @@ python
     'max_depth': 20,
     'bootstrap': True
 }
-Performance:
+
+### Performance:
 
 Metric	Score
 Accuracy	92.5%

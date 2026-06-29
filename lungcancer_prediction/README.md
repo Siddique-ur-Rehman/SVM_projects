@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 
-> A comprehensive machine learning system for predicting lung cancer risk based on patient characteristics and symptoms. This project implements and compares multiple ML models with thorough EDA and hyperparameter optimization.
+> A comprehensive machine learning system for predicting lung cancer risk based on patient characteristics and symptoms. This project implements and compares multiple ML models with thorough EDA and hyperparameter optimization..
 
 ---
 

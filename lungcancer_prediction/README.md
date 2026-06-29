@@ -124,7 +124,7 @@ Description: Classifies data points based on the majority class of their k-neare
 
 Parameters:
 
-python
+
 KNeighborsClassifier(n_neighbors=3)
 Performance:
 

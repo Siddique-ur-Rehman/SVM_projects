@@ -2,26 +2,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3.0-orange.svg)](https://scikit-learn.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28.0-red.svg)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 
-A comprehensive machine learning system for predicting lung cancer risk based on patient characteristics and symptoms. This project includes multiple ML models, thorough EDA, and a **fully functional Streamlit web application** for real-time predictions.
+A comprehensive machine learning system for predicting lung cancer risk based on patient characteristics and symptoms. This project implements and compares multiple ML models with thorough EDA and hyperparameter optimization.
 
-## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Models Implemented](#models-implemented)
-- [Results & Performance](#results--performance)
-- [Streamlit Web Application](#streamlit-web-application)
-- [Model Deployment](#model-deployment)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 📊 Project Overview
 
@@ -32,10 +17,8 @@ This project aims to build an accurate lung cancer prediction system using machi
 - ✅ Multiple ML Models (SVM, KNN, Random Forest)
 - ✅ Hyperparameter Optimization (RandomizedSearchCV)
 - ✅ Feature Importance Analysis
-- ✅ **Interactive Web Application (Streamlit)**
+- ✅ Model Performance Comparison
 - ✅ Production-Ready Model Deployment
-- ✅ Model Performance Dashboard
-- ✅ Real-time Risk Assessment
 
 ## 📁 Dataset
 
@@ -119,12 +102,12 @@ Confusion Matrix:
 text
 [[ 4  2]
  [ 3 35]]
-2. K-Nearest Neighbors (KNN)
-Description: Classifies data points based on the majority class of their k-nearest neighbors.
+###  2. K-Nearest Neighbors (KNN)
+## Description: Classifies data points based on the majority class of their k-nearest neighbors.
 
 Parameters:
 
-
+python
 KNeighborsClassifier(n_neighbors=3)
 Performance:
 
@@ -138,8 +121,8 @@ Confusion Matrix:
 text
 [[ 3  3]
  [ 2 36]]
-3. Random Forest Classifier (Best Model) 🌟
-Description: An ensemble learning method that constructs multiple decision trees and merges their predictions.
+### 3. Random Forest Classifier ⭐ (Best Model)
+## Description: An ensemble learning method that constructs multiple decision trees and merges their predictions.
 
 Hyperparameters (After RandomizedSearchCV):
 
@@ -167,30 +150,22 @@ text
  [ 1 38]]
 Cross-Validation Score: 0.923 ± 0.015
 
-📊 Model Comparison
+### 📊 Model Comparison
 Model	Accuracy	Recall	Precision	F1-Score
 Random Forest	92.5%	96.8%	97.5%	97.1%
 SVC	89.2%	94.1%	95.8%	94.9%
 KNN	88.9%	93.2%	95.3%	93.8%
-Feature Importance (Top 10)
+🔑 Feature Importance (Top 10)
 Based on Random Forest model:
 
-SMOKING - 0.187
-
-YELLOW_FINGERS - 0.165
-
-ANXIETY - 0.143
-
-PEER_PRESSURE - 0.112
-
-CHRONIC DISEASE - 0.098
-
-FATIGUE - 0.085
-
-ALLERGY - 0.072
-
-WHEEZING - 0.058
-
-ALCOHOL CONSUMING - 0.042
-
-COUGHING - 0.038
+Rank	Feature	Importance Score
+1	SMOKING	0.187
+2	YELLOW_FINGERS	0.165
+3	ANXIETY	0.143
+4	PEER_PRESSURE	0.112
+5	CHRONIC DISEASE	0.098
+6	FATIGUE	0.085
+7	ALLERGY	0.072
+8	WHEEZING	0.058
+9	ALCOHOL CONSUMING	0.042
+10	COUGHING	0.038

@@ -87,68 +87,12 @@ The dataset used is `lung cancer.csv`, which contains patient information and sy
 
 **Description**: A supervised learning model that finds the optimal hyperplane for classification.
 
-**Parameters**:
-
-Performance:
-
-Metric	Score
-Accuracy	89.2%
-Recall	94.1%
-Precision	95.8%
-F1-Score	94.9%
-Confusion Matrix:
-
-text
-[[ 4  2]
- [ 3 35]]
 ###  2. K-Nearest Neighbors (KNN)
-## Description: Classifies data points based on the majority class of their k-nearest neighbors.
+**Description**: Classifies data points based on the majority class of their k-nearest neighbors.
 
-Parameters:
-
-python
-KNeighborsClassifier(n_neighbors=3)
-Performance:
-
-Metric	Score
-Accuracy	88.9%
-Recall	93.2%
-Precision	95.3%
-F1-Score	93.8%
-Confusion Matrix:
-
-text
-[[ 3  3]
- [ 2 36]]
 ### 3. Random Forest Classifier ⭐ (Best Model)
-## Description: An ensemble learning method that constructs multiple decision trees and merges their predictions.
+**Description**: An ensemble learning method that constructs multiple decision trees and merges their predictions.
 
-Hyperparameters (After RandomizedSearchCV):
-
-python
-{
-    'n_estimators': 300,
-    'min_samples_split': 2,
-    'min_samples_leaf': 1,
-    'max_features': 'sqrt',
-    'max_depth': 20,
-    'bootstrap': True
-}
-
-### Performance:
-
-Metric	Score
-Accuracy	92.5%
-Recall	96.8%
-Precision	97.5%
-F1-Score	97.1%
-AUC-ROC	0.964
-Confusion Matrix:
-
-text
-[[ 6  1]
- [ 1 38]]
-Cross-Validation Score: 0.923 ± 0.015
 
 ### 📊 Model Comparison
 Model	Accuracy	Recall	Precision	F1-Score
@@ -164,8 +108,4 @@ Rank	Feature	Importance Score
 3	ANXIETY	0.143
 4	PEER_PRESSURE	0.112
 5	CHRONIC DISEASE	0.098
-6	FATIGUE	0.085
-7	ALLERGY	0.072
-8	WHEEZING	0.058
-9	ALCOHOL CONSUMING	0.042
-10	COUGHING	0.038
+
